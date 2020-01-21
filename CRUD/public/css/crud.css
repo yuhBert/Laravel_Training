@@ -1,0 +1,29 @@
+.buttonAdd {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+  
+.buttonAdd:hover {
+    background-color: green; /* Green */
+    color: white;
+}
+
+.buttonDelete {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+  
+.buttonDelete:hover {
+    background-color: red; /* Green */
+    color: white;
+}
+
+.buttonEdit {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+  
+.buttonEdit:hover {
+    background-color: blue; /* Green */
+    color: white;
+}

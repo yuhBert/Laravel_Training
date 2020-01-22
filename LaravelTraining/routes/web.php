@@ -22,6 +22,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-// Route::get('/sample', 'UserController@sample')->name('sample');
-
+Route::get('/addHuman', 'UserController@addHuman')->name('add');
+Route::get('/delete/{id?}', 'UserController@delete')->name('delete');
 Route::get('/welcome/{id?}', 'UserController@welcome')->name('welcome');
+Route::get('/editHuman/{id?}', 'UserController@editHuman')->name('edit');
+
+Route::post('/addHuman/post', 'UserController@create')->name('create');
+Route::post('/editHuman/{id?}', 'UserController@update')->name('update');
+
+
+
+
+
+

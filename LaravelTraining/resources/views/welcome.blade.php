@@ -9,7 +9,9 @@
 
 <body class="background">
     <div class="image_hover_bg">
-        <form class="form">
+        
+    <a href="{{ route('add') }}"><button class="btn-success">Add Employee</button></a><br>
+        <div class="form">
             <table id="customers">
                 <tr>
                     <th>First Name</th>
@@ -19,6 +21,7 @@
                     <th>Age</th>
                     <th>Gender</th>
                     <th>Address</th>
+                    <th colspan="2">Action</th>
                 </tr>
             @foreach($humans as $human)
                 <tr>
@@ -33,10 +36,21 @@
                         <td>Female</td>
                     @endif
                     <td>{{ $human['address'] }}</td>
+                    <td><form action="{{ route('delete',$human->id )}}" method="GET">
+                        @csrf
+                        <button class="btn-danger" type="submit">Delete</button>
+                    </form></td>    
+                    <td><form action="{{ route('edit', $human->id)}}">
+                    @csrf
+                        <button class="btn-primary">Edit</button>
+                        </form>
+                    </td>
                 </tr>
             @endforeach
             </table>
-        </form> 
+        </div>
     </div>
+    
+  
 </body>
 @endsection

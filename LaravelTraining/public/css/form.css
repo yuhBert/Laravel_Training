@@ -9,12 +9,12 @@ body {
     background-repeat: no-repeat;
     display: block;
 }
-
+/* 
 .image_hover_bg{
     display:none;
 }
 
-.background:hover .image_hover_bg{display:block}
+.background:hover .image_hover_bg{display:block} */
 
 .header {
     overflow: hidden;
@@ -93,4 +93,23 @@ body {
 .form {
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 50%;
 }
+
+.btn-success {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.addForm {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.error {
+    color: red;
+}
+

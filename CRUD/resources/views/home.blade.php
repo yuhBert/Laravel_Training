@@ -19,14 +19,14 @@
                 <td>{{ $crud['name'] }}</td>
                 <td>{{ $crud['age'] }}</td>
                 <td>{{ $crud['address'] }}</td>
-                <td><a href=""></a><button class='btn-outline-danger'>DELETE</button></a></td>
+                <td><a href="{{ route('delete',['id'=>$crud->id]) }}"><button class='btn-outline-danger'>DELETE</button></a></td>
                 <td><button class='btn-outline-primary'>&nbsp;&nbsp;&nbsp;&nbsp;EDIT&nbsp;&nbsp;&nbsp;&nbsp;</button></td>
                 </tr>
                 @endforeach
             </tbody>
           
         </table>
-        <center><a href=""></a><button class='btn-outline-success'>&nbsp;&nbsp;&nbsp;&nbsp;ADD&nbsp;&nbsp;&nbsp;&nbsp;</button></center>
+        <center><a href="{{ route('add' )}}"><button class='btn-outline-success'>&nbsp;&nbsp;&nbsp;&nbsp;ADD&nbsp;&nbsp;&nbsp;&nbsp;</button></a></center>
         </div>
     </div>
 </div>

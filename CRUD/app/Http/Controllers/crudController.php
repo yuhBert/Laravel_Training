@@ -26,5 +26,12 @@ class crudController extends Controller
         return redirect('show');
     }
 
+    public function delete($id) 
+    {
+        $del = crud::findOrFail($id);
+        $del->delete();
+        return redirect('show');
+    }
+
    
 }
